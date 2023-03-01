@@ -23,6 +23,20 @@
   opacity: 0;
 }
 
+h1, h2 {
+  font-family: ITCGaramondLight,Georgia,Times New Roman,Times,serif;
+  text-transform: uppercase;
+}
+
+.text-logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.letter-spacing-common {
+  letter-spacing: .25em;
+}
+
 .lottie-animation {
   width: 160px;
   height: 160px;
