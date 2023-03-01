@@ -1,0 +1,91 @@
+.filter-logo {
+    filter: brightness(0);
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.z-10 {
+    z-index: 3;
+}
+
+.intro-video {
+  object-fit: cover;
+  object-position: center;
+}
+
+.intro-video,
+.intro-motif {
+  opacity: 0;
+}
+
+.lottie-animation {
+  width: 160px;
+  height: 160px;
+}
+
+.intro--animating {
+  animation: introFadeOut 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.intro--animating .intro-video,
+.intro--animating .intro-motif {
+    animation: itemsFadeIn 3s;
+    animation-fill-mode: forwards;
+  }
+
+.intro--close {
+  animation: introClose 2s;
+  animation-fill-mode: forwards;
+}
+
+.bg-green__100, .bghover-green__100:hover {
+    background-color: #e7ead4;
+}
+
+@keyframes itemsFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes introFadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  99.999999% {
+    opacity: 0;
+  }
+
+  100% {
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+@keyframes introClose {
+  0% {
+    opacity: 1;
+  }
+
+  99.999999% {
+    opacity: 0;
+  }
+
+  100% {
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
